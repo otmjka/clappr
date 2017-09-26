@@ -51,12 +51,12 @@
         <div id="editor">var playerElement = document.getElementById("player-wrapper");
 
 var player = new Clappr.Player({
-  source: 'http://clappr.io/highline.mp4',
-  baseUrl: '/latest',
+  source: 'http://demo.flussonic.com/clock/event-3600.m3u8',
   poster: 'http://clappr.io/poster.png',
   mute: true,
   height: 360,
-  width: 640
+  width: 640,
+  actualLiveTime: true,
 });
 
 player.attachTo(playerElement);
@@ -89,11 +89,12 @@ player.attachTo(playerElement);
       var playerElement = document.getElementById("player-wrapper");
 
       var player = new Clappr.Player({
-        source: urlParams.src || 'http://clappr.io/highline.mp4',
+        source: urlParams.src || 'http://demo.flussonic.com/clock/event-3600.m3u8',
         poster: 'http://clappr.io/poster.png',
         mute: true,
         height: 360,
-        width: 640
+        width: 640,
+        actualLiveTime: true,
       });
 
       player.attachTo(playerElement);
